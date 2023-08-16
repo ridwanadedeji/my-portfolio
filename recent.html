@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Work</title>
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+    <nav class="navbar">
+        <p class="my-name recent">Ridwan Adedeji</p>
+        <div class="links"><a class="home" href="index.html">Home</a></div>
+    </nav>
+    <main>
+        <section class="project">
+            <div id="greeting-container">
+                <input type="text" id="name" placeholder="Your name"><br>
+                <button onclick="sayHello()">Say Hello</button>
+                <p id="greeting-output"></p>
+            </div>
+        </section>
+                  <div class="showcase">
+                      <h1 class="instruct">Embark on a Journey Through My Portfolio</h1>
+                      <h3>Unveiling My Digital Odyssey</h3>
+                      <p class="sub-story">Hello there, adventurous explorer! You've set out on a digital journey through my portfolio, showcasing my love for coding, design, and the endless quest for greatness. As we navigate this digital world, let me be your guide through the intriguing realms of my creations.</p>
+                      <h3>The Archipelago of Creativity</h3>
+                      <p class="sub-story">Imagine my portfolio as a cluster of vibrant islands, each representing a unique project or facet of my skills. These islands are not merely static pieces but living entities that evolve and adapt. Let's set sail and explore a few of these captivating isles:</p>
+                      <p class="sub-head">Island of Visual Symphony</p>
+                      <p class="sub-story">This island beckons with its harmonious blend of colors, typography, and design finesse. Behold the meticulous attention I've devoted to creating an aesthetic oasis, where every pixel sings in unison to craft a captivating user experience.</p>
+                      <p class="sub-head">Citadel of Code</p>
+                      <p class="sub-story">Explore the core of the Citadel of Code, a haven for algorithms and scripts. Witness the artistry of my coding, where logic and creativity merge to bring digital realms to life. Take a peek at a script orchestrating dynamic interactions:</p>
+                      <img src="images/pythoncode.PNG" alt="Python snippet showcasing an interactive script">
+                      <p class="sub-head">Nexus of Learning</p>
+                      <p class="sub-story">Embarking on a journey of knowledge, the Nexus of Learning showcases my unwavering pursuit of growth. Delve into my expedition records, detailing challenges overcome, insights acquired, and the remarkable voyage of crafting this portfolio.</p>
+                      <p class="sub-head">Horizons Unseen</p>
+                      <p class="sub-story">But our journey continues. There are unexplored places beyond these islands, where my dreams become real. The mist-covered Horizons Unseen are like a blank page where I'll create new projects and use new technologies.</p>
+                      <h3>Charting a Course Together</h3>
+                      <p class="sub-story">As we conclude this expedition, I extend an invitation to you, fellow adventurer. Join me on this odyssey, and let's collaborate to transform your visions into digital realities. Your challenges are the unexplored territories that inspire me, and your dreams are the stars guiding our way.</p>
+                      <br>
+                      <div id="footer"><span>So, take a moment to rest at the Campfire of Creativity and share your thoughts. Together, we shall sculpt the future.</span></div>
+                  </div>
+    </main>
+    
+    <script>
+        function sayHello() {
+            var name = document.getElementById('name').value;
+            var greeting = `Hello, ${name}! Welcome to my digital universe.`;
+            document.getElementById('greeting-output').textContent = greeting;
+        }
+    </script>
+</body>
+</html>
